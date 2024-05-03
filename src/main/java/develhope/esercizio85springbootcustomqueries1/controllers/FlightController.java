@@ -16,9 +16,9 @@ public class FlightController {
     @Autowired
     FlightService flightService;
 
-    @GetMapping("/provision-flights")
-    public List<Flight> provisionFlights() {
-        return flightService.provisionFlights(50);
+    @GetMapping("/create-flights")
+    public List<Flight> createFlights() {
+        return flightService.createFlights(50);
     }
 
     @GetMapping("/all-flights")

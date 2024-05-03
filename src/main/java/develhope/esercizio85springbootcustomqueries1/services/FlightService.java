@@ -19,7 +19,7 @@ public class FlightService {
     @Autowired
     FlightRepository flightRepository;
 
-    public List<Flight> provisionFlights(int count) {
+    public List<Flight> createFlights(int count) {
         Random random = new Random();
         List<Flight> flights = IntStream.range(0, count)
                 .mapToObj(i -> {
