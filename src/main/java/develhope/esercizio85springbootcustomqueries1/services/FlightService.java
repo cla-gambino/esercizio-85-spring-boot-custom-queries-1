@@ -47,4 +47,8 @@ public class FlightService {
         }
         return sb.toString();
     }
+
+    public List<Flight> getFlightsByStatus(FlightStatus status) {
+        return flightRepository.findAllByStatus(status);
+    }
 }
